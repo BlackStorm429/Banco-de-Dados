@@ -1,0 +1,16 @@
+Conflitos:
+
+r2(y), w3(y)
+w3(y), r1(y)
+r3(z), w2(z)
+w2(z), r1(z)
+r2(x), w1(x)
+w1(x), r3(x)
+
+1 - Não é completo. Apesar de todas as operações de cada transação estarem no escalonamento com ordem preservada, as situações de conflito não precedem ou sucedem umas as outras. Por exemplo, no conflito r2(y), w3(y) a T2 precede a T3, enquanto que no conflito r3(z), w2(z) a T3 precede a T2.
+
+2 - Não é recuperável. T3 realiza uma leitura do item x escrita por T1, sendo que T1 confirma depois de T3.
+
+3 - Não é serializável. Existem ciclos no grafo de precedência. Por exemplo, T1 - T3 - T1.
+
+
