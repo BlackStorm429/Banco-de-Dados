@@ -1,0 +1,51 @@
+Sa = l3(y), r3(y), l2(z), r2(z), l1(x), r1(x), l2(x), r2(x), l3(z), r3(z), l2(y), r2(y), w3(y), l1(y), r1(y), w2(z), u2(z), u2(x), u2(y), w1(x), l3(x), r3(x), u3(y), u3(z), u3(x), l1(z), r1(z), u1(x),  u1(y), u1(z)
+
+Questão 01
+
+Bloqueio binário -> só tem lock e unlock
+2PL estrito -> se precisar usar o item, fazer o bloqueio antes e não desfazer nenhum bloqueio, além de desbloquear os itens antes das operações commitarem
+Commit implícita -> depois da última operação da transação
+Deadlock -> matar a transação mais recente
+
+Escalonamento:
+
+Sa' = r3(y), r3(z), w3(y), r3(x)
+FB = 
+FE = 
+
+Os deadlocks são de T2 esperando T1, T3 esperando T2 e T1 esperando T3.
+
+T2 -> T1 -> T3 -> T2
+T3 -> T2 -> T3
+
+Questão 02
+
+Bloqueio ternário (compartilhado)
+2PL estrito
+Confirmação (commit) implícita
+Deadlock -> matar a transação mais recente
+
+Escalonamento:
+
+Sa' = r3(y), r1(x), r3(z), r1(y), w1(x), r1(z), w3(y), r3(x)
+FB = 
+FE = 
+
+O deadlock é de T3 esperando T2 e T2 esperando T3.
+
+Questão 03
+
+Timestamp
+
+TS(T1) = 3
+TS(T2) = 2
+TS(T3) = 1
+
+	rTS	wTS
+x	 3	 3
+y	 3	 0
+z	 3	 2
+
+Escalonamento:
+
+Sa' = r2(z), r1(x), r2(x), r2(y), r1(y), w2(z), w1(x), r1(z)
