@@ -1,6 +1,6 @@
 # HOEX
 
-Esta pasta contém os arquivos necessários para executar a tarefa pedida de implementar uma autenticação de sites utilizando o Banco de Dados NoSQL Firebase.
+Esta pasta contém os arquivos necessários para executar a tarefa pedida que consiste em implementar uma autenticação de sites utilizando o Banco de Dados NoSQL Firebase.
 
 ## Arquivos
 
