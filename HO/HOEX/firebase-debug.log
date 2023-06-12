@@ -1,0 +1,34 @@
+[debug] [2023-06-12T00:44:34.694Z] ----------------------------------------------------------------------
+[debug] [2023-06-12T00:44:34.695Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\larin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2023-06-12T00:44:34.695Z] CLI Version:   12.3.1
+[debug] [2023-06-12T00:44:34.696Z] Platform:      win32
+[debug] [2023-06-12T00:44:34.696Z] Node Version:  v18.16.0
+[debug] [2023-06-12T00:44:34.696Z] Time:          Sun Jun 11 2023 21:44:34 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2023-06-12T00:44:34.697Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-12T00:44:34.785Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-12T00:44:34.785Z] > authorizing via signed-in user (larasouza429@gmail.com)
+[debug] [2023-06-12T00:44:34.786Z] [iam] checking project hoex-178fc for permissions ["firebase.projects.get"]
+[debug] [2023-06-12T00:44:34.787Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hoex-178fc:testIamPermissions [none]
+[debug] [2023-06-12T00:44:34.787Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hoex-178fc:testIamPermissions x-goog-quota-user=projects/hoex-178fc
+[debug] [2023-06-12T00:44:34.787Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hoex-178fc:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-06-12T00:44:35.696Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hoex-178fc:testIamPermissions 200
+[debug] [2023-06-12T00:44:35.696Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hoex-178fc:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-06-12T00:44:35.698Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hoex-178fc [none]
+[debug] [2023-06-12T00:44:36.126Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hoex-178fc 200
+[debug] [2023-06-12T00:44:36.126Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hoex-178fc {"projectId":"hoex-178fc","projectNumber":"872646707489","displayName":"HOEX","name":"projects/hoex-178fc","resources":{"hostingSite":"hoex-178fc"},"state":"ACTIVE","etag":"1_487e06ac-9287-442b-bbfc-da7defec40b5"}
+[debug] [2023-06-12T00:44:36.131Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/hoex-178fc/sites 
+[debug] [2023-06-12T00:44:37.209Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/hoex-178fc/sites 200
+[debug] [2023-06-12T00:44:37.210Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/hoex-178fc/sites {"sites":[{"name":"projects/hoex-178fc/sites/hoex-178fc","defaultUrl":"https://hoex-178fc.web.app","appId":"1:872646707489:web:308ed489a6dd05c778d660","type":"DEFAULT_SITE"}]}
+[debug] [2023-06-12T00:44:37.210Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hoex-178fc/webApps/1:872646707489:web:308ed489a6dd05c778d660/config [none]
+[debug] [2023-06-12T00:44:38.336Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hoex-178fc/webApps/1:872646707489:web:308ed489a6dd05c778d660/config 200
+[debug] [2023-06-12T00:44:38.336Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hoex-178fc/webApps/1:872646707489:web:308ed489a6dd05c778d660/config {"projectId":"hoex-178fc","appId":"1:872646707489:web:308ed489a6dd05c778d660","storageBucket":"hoex-178fc.appspot.com","apiKey":"AIzaSyCh9jBk4y93qhXGm_YzwcEuU5uCkgQD6ek","authDomain":"hoex-178fc.firebaseapp.com","messagingSenderId":"872646707489"}
+[debug] [2023-06-12T00:44:38.343Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hoex-178fc [none]
+[debug] [2023-06-12T00:44:38.756Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hoex-178fc 200
+[debug] [2023-06-12T00:44:38.757Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hoex-178fc {"projectId":"hoex-178fc","projectNumber":"872646707489","displayName":"HOEX","name":"projects/hoex-178fc","resources":{"hostingSite":"hoex-178fc"},"state":"ACTIVE","etag":"1_487e06ac-9287-442b-bbfc-da7defec40b5"}
+[info] i  hosting[hoex-178fc]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[hoex-178fc]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [12/Jun/2023:00:44:40 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [12/Jun/2023:00:44:40 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [12/Jun/2023:00:44:40 +0000] "GET /styles.css HTTP/1.1" 200 886 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [12/Jun/2023:00:44:40 +0000] \"GET /styles.css HTTP/1.1\" 200 886 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [12/Jun/2023:00:44:40 +0000] "GET /app.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [12/Jun/2023:00:44:40 +0000] \"GET /app.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [12/Jun/2023:00:44:40 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [12/Jun/2023:00:44:40 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
