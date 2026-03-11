@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Autenticação Firebase</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Autenticação Firebase</h1>
+  
+  <!-- Formulário de Login -->
+  <div class="form-container">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="email" id="login-email" placeholder="E-mail" required>
+      <input type="password" id="login-password" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+  
+  <!-- Formulário de Registro -->
+  <div class="form-container">
+    <h2>Registrar</h2>
+    <form id="register-form">
+      <input type="email" id="register-email" placeholder="E-mail" required>
+      <input type="password" id="register-password" placeholder="Senha" required>
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+
+  <div id="message-container"></div>
+  
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

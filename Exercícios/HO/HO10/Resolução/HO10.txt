@@ -1,0 +1,85 @@
+Índice de Atores:
+
+Tamanho = 32 B
+Blocagem = 2.048 / 32 = 64
+Número de blocos = 10.000 / 64 = 157
+Espaço desperdiçado = 2.048 - (32 x 64) = 0 B
+Consumo de espaço = 157 x 2 KB = 314 KB
+Acessos = 8
+
+------------------------------------------------------
+
+Índice de Clientes:
+
+Tamanho = 27 B
+Blocagem = 2.048 / 27 = 75
+Número de blocos = 100.000 / 75 = 1.334
+Espaço desperdiçado = 2.048 - (75 x 27) = 23 B
+Consumo de espaço = 20.000 x 2 KB = 2.668 KB
+Acessos = 11
+ 
+------------------------------------------------------
+
+Índice de Filmes:
+
+Tamanho = 32 B
+Blocagem = 2.048 / 32 = 64
+Número de blocos = 2.000.000 / 64 = 31.250
+Espaço desperdiçado = 2.048 - (32 x 64) = 0 B
+Consumo de espaço = 31.250 x 2 KB = 62.500 KB
+Acessos = 15
+ 
+------------------------------------------------------
+
+Índice de Funcionários:
+
+Tamanho = 27 B
+Blocagem = 2.048 / 27 = 75
+Número de blocos = 3.500 / 75 = 47
+Espaço desperdiçado = 2.048 - (75 x 27) = 23 B
+Consumo de espaço = 47 x 2 KB = 94 KB
+Acessos = 6
+ 
+------------------------------------------------------
+
+Índice de Mídias:
+
+Tamanho = 40 B
+Blocagem = 2.048 / 40 = 51
+Número de blocos = 10.000.000 / 51 = 196.079
+Espaço desperdiçado = 2.048 - (51 x 40) = 8 B
+Consumo de espaço = 196.079 x 2 KB = 392.158 KB
+Acessos = 18
+
+------------------------------------------------------
+
+Índice de Aluguel:
+
+Tamanho = 63 B
+Blocagem = 2.048 / 63 = 32
+Número de blocos = 20.000.000 / 32 = 625.000
+Espaço desperdiçado = 2048 - (32 x 63) = 32 B
+Consumo de espaço = 625.000 x 2 KB = 1.250.000 KB
+Acessos = 20
+ 
+------------------------------------------------------
+
+Índice de Pagamentos:
+
+Tamanho= 64 B
+Blocagem = 2.048 / 64 = 32
+Número de blocos = 50.000.000 / 32 = 1.562.500
+Espaço desperdiçado = 2.048 - (32 x 64) = 0 B
+Consumo de espaço = 1.562.500 x 2 KB = 3.125.000 KB
+Acessos = 21
+
+------------------------------------------------------
+
+Índice de Atores em Filmes:
+
+Tamanho = 48 B
+Blocagem = 2.048 / 48 = 42
+Número de blocos = 1.000.000 / 42 = 23.809
+Espaço desperdiçado = 2.048 - (42 x 48) = 32 B
+Consumo de espaço = 23.809 x 2 KB = 47.618 KB
+Acessos = 16
